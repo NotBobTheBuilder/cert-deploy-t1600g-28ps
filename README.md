@@ -1,6 +1,6 @@
 # cert-deploy-t1600g-28ps
 
-The TP-Link T1600G-28PS switch (and similar in that family) support ssl, and the certificate and key can be uploaded programmatically over telnet.
+The TP-Link T1600G-28PS switch (and similar in that family) support ssl, and the certificate and key can be set programmatically over telnet.
 
 This repository includes a letsencrypt deploy hook comprising an expect script and bash wrapper for automating that process from a raspberry pi.
 
