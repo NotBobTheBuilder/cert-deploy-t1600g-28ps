@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e 
+
+cp /etc/letsencrypt/live/switch.key/fullchain.pem /srv/tftp/switch.crt
+openssl rsa -in /etc/letsencrypt/live/switch.key/privkey.pem -out /srv/tftp/switch.key
+chmod 644 /srv/tftp/switch.key
+
+expect /home/pi/updateswitchcert.tk
+
+rm /srv/tftp/switch.crt
+rm /srv/tftp/switch.key
+
