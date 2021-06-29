@@ -8,7 +8,6 @@ This repository includes a letsencrypt deploy hook comprising an expect script a
 
 - Install `tftpd-hpa` and start it. The switch downloads certs and keys over tftp, telnet just starts that process. There is no direct upload.
 - Install `expect`
-- Place the `updateswitchcert.tk` file in the `pi` user home directory.
 - Place the `switch` hook script in the letsencrypt deploy hooks directory.
 -- `chmod +x` the file if necessary.
 - Create a further file in the pi user directory, `.switchcredentials`, a plain text file with 3 lines (and a final newline at the end of the file):
