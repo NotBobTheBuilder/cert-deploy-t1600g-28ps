@@ -2,7 +2,7 @@
 
 set -e
 
-cp /etc/letsencrypt/live/switch.key/fullchain.pem /srv/tftp/switch.crt
+cp /etc/letsencrypt/live/switch.key/cert.pem /srv/tftp/switch.crt
 openssl rsa -in /etc/letsencrypt/live/switch.key/privkey.pem -out /srv/tftp/switch.key
 chmod 644 /srv/tftp/switch.key
 
