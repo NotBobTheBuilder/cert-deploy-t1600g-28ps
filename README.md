@@ -13,8 +13,8 @@ This repository includes a letsencrypt deploy hook comprising an expect script a
 - Create a further file in the pi user directory, `.switchcredentials`, a plain text file with 3 lines (and a final newline at the end of the file):
 
 ```
-iporhostname.of.your.switch
-telnetusername
-telnetpassword
+switchaddr=hostname.of.your.switch
+switchuser=telnetusername
+switchpass=telnetpassword
 ```
 
